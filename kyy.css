@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #2c3e50;
+  line-height: 1.6;
+  min-height: 100vh;
+  /* GRADASI BACKGROUND UTAMA: BIRU TOSKA ELEGAN */
+  background: linear-gradient(135deg, #0f766e, #0e7490, #155e75);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background: #f0fdfa;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(15, 118, 110, 0.25);
+}
+
+/* HEADER CLASS */
+.header-banner {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.header-subtitle {
+  margin: 18px 0 0;
+  color: #115e59;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* REUSABLE CARD SECTION */
+.card-section {
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border-left: 5px solid #0d9488; /* AKSEN BORDER TOSKA */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(15, 118, 110, 0.08);
+}
+
+/* REUSABLE HEADINGS */
+.heading-title {
+  margin: 0;
+  color: #134e4a;
+  font-size: 28px;
+  line-height: 1.4;
+  text-shadow: 0 2px 3px rgba(13, 148, 136, 0.15);
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  color: #0f766e;
+  font-size: 22px;
+  line-height: 1.4;
+  border-bottom: 2px solid #2dd4bf;
+}
+
+.sub-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #115e59;
+  font-size: 17px;
+}
+
+.small-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #134e4a;
+}
+
+/* REUSABLE TEXT STYLES */
+p {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+strong, .highlight-text {
+  color: #115e59;
+}
+
+a {
+  color: #0d9488;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0f766e;
+}
+
+/* REUSABLE BADGE / BLOCKQUOTE BOX */
+.badge-box {
+  margin: 16px 0;
+  padding: 16px;
+  background: linear-gradient(120deg, #ccfbf1, #e0f2fe);
+  border-left: 4px solid #14b8a6;
+  border-radius: 9px;
+}
+
+.badge-box .sub-title {
+  margin-top: 12px;
+}
+
+.badge-box ul {
+  margin-bottom: 0;
+}
+
+/* CODE BLOCKS */
+pre {
+  position: relative;
+  margin: 16px 0;
+  padding: 20px 16px;
+  overflow-x: auto;
+  background: #134e4a; /* DARK TEAL */
+  color: #ccfbf1;
+  border-radius: 8px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+pre::after {
+  content: "HTML";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  padding: 2px 7px;
+  color: #fff;
+  background: #0d9488;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+pre.tree-code::after {
+  display: none;
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+  color: #0f766e;
+  background: #ccfbf1;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+}
+
+/* REUSABLE STYLED TABLE */
+.styled-table {
+  width: 100%;
+  margin: 16px 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+  font-size: 13px;
+}
+
+.styled-table thead {
+  color: #ffffff;
+  background: #0d9488;
+}
+
+.styled-table th {
+  padding: 18px 15px;
+  text-align: left;
+  color: #ffffff;
+  background: #0d9488;
+  border: none;
+}
+
+.styled-table th:nth-child(even) {
+  background: #0f766e;
+}
+
+.styled-table td {
+  padding: 18px 15px;
+  text-align: left;
+  color: #2c3e50;
+  background: #ffffff;
+  border-bottom: 1px solid #e0f2fe;
+}
+
+.styled-table tbody tr:nth-child(even) td {
+  background: #f0fdfa;
+}
+
+/* REUSABLE BOX DEMO / LIVE EXAMPLES */
+.live-examples {
+  margin-top: 16px;
+  padding: 24px 14px;
+  background: #f0fdfa;
+  border: 1px dashed #14b8a6;
+  border-radius: 8px;
+}
+
+/* FORM STYLES */
+.custom-form {
+  margin-top: 16px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+}
+
+.custom-form p {
+  margin: 0 0 8px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #134e4a;
+  font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  color: #134e4a;
+  background: #ffffff;
+  border: 1px solid #99f6e4;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
+}
+
+.btn-submit {
+  padding: 10px 18px;
+  color: #ffffff;
+  background: #0d9488;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #0f766e;
+}
+
+/* THEME MODIFIERS FOR SPECIFIC SECTIONS */
+.practice-theme {
+  background: linear-gradient(120deg, #99f6e4, #a5f3fc);
+  border: none;
+}
+
+.next-steps-theme {
+  background: linear-gradient(120deg, #ccfbf1, #e0f2fe, #bae6fd);
+  border: none;
+}
+
+.congrat-theme {
+  margin-bottom: 0;
+  padding: 22px 24px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(120deg, #0f766e, #0e7490);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 14px rgba(15, 118, 110, 0.2);
+}
+
+.congrat-theme .section-title {
+  color: #ffffff;
+  border-bottom: none;
+  margin-bottom: 18px;
+}
+
+.congrat-theme p, .congrat-theme strong {
+  color: #ffffff;
+}
